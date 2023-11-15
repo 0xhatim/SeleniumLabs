@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AI Labs</title>
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {% load static %}
+        <link href="{% static 'styles.css' %}" rel="stylesheet" />
+        <style>
+            /* Add this to your stylesheet */
+.masthead {
+    font-family: 'Cairo', sans-serif; /* Make all fonts in masthead Cairo */
+}
+
+.masthead h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.masthead p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Additional spacing before buttons */
+}
+
+.masthead .btn {
+    margin-right: 10px; /* Space between buttons */
+    padding: 10px 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .masthead img {
+        width: 100%;
+    }
+}
+
+.btn-solid {
+    background-color: #329D9C; /* New color background */
+    color: #FFFFFF; /* White text */
+    border: 2px solid #329D9C; /* New color border */
+    padding: 10px 20px; /* Example padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent; /* Transparent background */
+    color: #329D9C; /* New color text */
+    border: 2px solid #329D9C; /* New color border */
+    padding: 10px 20px; /* Example padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #329D9C; /* New color background on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+.btn-solid:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #329D9C; /* New color text on hover */
+    border: 2px solid #329D9C; /* New color border remains */
+}
+
+
+        </style>
+
+<style>
+    /* Custom CSS to style the purple background */
+    .purple-bg {
+        background-color: purple; /* Set the background color to purple */
+        color: white; /* Set the text color to white for better visibility */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Add rounded corners */
+        display: inline-block; /* Ensure the background covers the text only */
+        margin-right: 5px;
+
+    }
+</style>
+
+<style>
+    /* Custom CSS for dark background and glitch effect */
+    .dark-bg {
+        background-color: #000; /* Set a dark background color */
+        color: #fff; /* Set the text color to white for better visibility */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Add rounded corners */
+        display: inline-block; /* Ensure the background covers the text only */
+    }
+
+    /* CSS for the glitch effect */
+    .glitch {
+        animation: glitch 2s infinite;
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+        25% {
+            transform: translate(2px, -2px);
+        }
+        50% {
+            transform: translate(-2px, 2px);
+        }
+        75% {
+            transform: translate(2px, -2px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+</style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">AI club Challenges </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <!-- 
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="">Features</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
+                        -->
+                    </ul>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <a class="small" style="text-decoration: none; color: white;" target="_blank" href="https://github.com/0xhatim">Github Reposity </a>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Masthead text and app badges-->
+                        <div class="text-center text-lg-left">
+                            <h1>Unleash Web Scraping Potential 🦾🔥</h1>
+                            <p>Expand your skills without limits. With our labs, you get a professional environment for hands-on practice.</p>
+                            <div>
+              
+                                <a class="btn btn-solid" href="#1">Start Labs</a>
+                                <button class="btn btn-outline">Watch Tutorial</button>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Masthead device mockup feature-->
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="m-3" style="width:75%" src="https://i.imgur.com/RtiZ4of.png" />
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Quote/testimonial aside-->
+        <aside class="text-center bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="h2 fs-1 text-white mb-4">
+                            "AI Labs offers a comprehensive suite for those eager to learn and legally practice web scraping and data crawling techniques."
+                          </div>
+                          <h4 class="text-white mb-4">
+                            — Powered by Hatim
+                          </h4>
+                          
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- App features section-->
+        
+        <!-- Basic features section-->
+        <section class="bg-light" id="1">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Lab 00: <strong>Login Page🔥</strong></h2><span class="text-md-left"><span class="purple-bg">AI</span><span class="dark-bg glitch">Cyber Security</span></span>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Make a <span class="text-danger">Web Scraping Script login</span> into the page and grab data , or make another actions its will help you understaind how to send data into web application , and how to brute force an account and get the correct password.</p>
+                        <a class="btn btn-primary mt-4" href="{% url 'login' %}"> Start Lab </a>
+
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid " src="https://images.spiceworks.com/wp-content/uploads/2022/05/10131245/Critical-Steps-of-a-Brute-Force-Attack.png" alt="..." /></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section >
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid " src="https://www.searchenginejournal.com/wp-content/uploads/2021/09/google-captcha-seo-61525a7554734-sej-1280x720.png" alt="..." /></div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Lab 01: <span class="text-danger">Bypass Captcha Turnig Test</span> 👀🤩</h2>
+                        <span class="purple-bg">AI</span><span class="dark-bg glitch">Cyber Security</span></span>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0"><span class="text-danger text-lg-left">Self Study Exam !</span><br>in this Lab we will counter a challenge in your Login page a somesort of captcha will be there, think how to solve the puzzle and bypass it with your programming skills  !?</p>
+                   
+                        <a class="btn btn-outline-primary mt-4" href="{% url 'login_captcha' %}"> Start Lab </a>
+
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Final Lab:Grab 500 user infromation !🔥</h2>
+                        <span class="purple-bg">AI</span><span class="dark-bg glitch">Cyber Security</span></span>
+
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Ready to expernice the power of web scraping? in this lab you will learn how to grab 500 username details with most details</p>
+                        <p class="lead fw-normal mb-5 mb-lg-0 text-danger">There is Bonus Lab Hidden for Smart people , more details information ---- PRO Version Data---</p>
+
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid " src="https://kinsta.com/wp-content/uploads/2022/07/Web-scraping.png" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+    
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Hatim , <a  class="text-primary" href="https://x.com/0xhatim">FOLLOW ME ! </a> 2023. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Feedback Modal-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+  
+    </body>
+</html>

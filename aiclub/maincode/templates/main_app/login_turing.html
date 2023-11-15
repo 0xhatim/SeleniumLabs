@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AI Labs</title>
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {% load static %}
+        <link href="{% static 'styles.css' %}" rel="stylesheet" />
+        <style>
+            /* Add this to your stylesheet */
+.masthead {
+    font-family: 'Cairo', sans-serif; /* Make all fonts in masthead Cairo */
+}
+
+.masthead h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.masthead p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Additional spacing before buttons */
+}
+
+.masthead .btn {
+    margin-right: 10px; /* Space between buttons */
+    padding: 10px 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .masthead img {
+        width: 100%;
+    }
+}
+
+.btn-solid {
+    background-color: #329D9C; /* New color background */
+    color: #FFFFFF; /* White text */
+    border: 2px solid #329D9C; /* New color border */
+    padding: 10px 20px; /* Example padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent; /* Transparent background */
+    color: #329D9C; /* New color text */
+    border: 2px solid #329D9C; /* New color border */
+    padding: 10px 20px; /* Example padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #329D9C; /* New color background on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+.btn-solid:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #329D9C; /* New color text on hover */
+    border: 2px solid #329D9C; /* New color border remains */
+}
+
+
+        </style>
+
+<style>
+    /* Custom CSS to style the purple background */
+    .purple-bg {
+        background-color: purple; /* Set the background color to purple */
+        color: white; /* Set the text color to white for better visibility */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Add rounded corners */
+        display: inline-block; /* Ensure the background covers the text only */
+        margin-right: 5px;
+
+    }
+</style>
+
+<style>
+    /* Custom CSS for dark background and glitch effect */
+    .dark-bg {
+        background-color: #000; /* Set a dark background color */
+        color: #fff; /* Set the text color to white for better visibility */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Add rounded corners */
+        display: inline-block; /* Ensure the background covers the text only */
+    }
+
+    /* CSS for the glitch effect */
+    .glitch {
+        animation: glitch 2s infinite;
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+        25% {
+            transform: translate(2px, -2px);
+        }
+        50% {
+            transform: translate(-2px, 2px);
+        }
+        75% {
+            transform: translate(2px, -2px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+</style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="{% url 'home' %}">AI club Challenges </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <!-- 
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="">Features</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
+                        -->
+                    </ul>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <a class="small" style="text-decoration: none; color: white;" target="_blank" href="https://github.com/0xhatim">Github Reposity </a>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Masthead text and app badges-->
+                        <div class="text-center text-lg-left">
+                            <h1>Ready for first challenge ?</h1>
+                            <p>
+                                In this challenge, your task is to utilize Selenium, a powerful web automation tool, to perform web scraping for the purpose of logging into a webpage. Your objective is to find and implement the fastest method to obtain the correct password for authentication.
+                            </p>
+                            <div>
+              
+                                <a class="btn btn-solid" href="media/readme.txt" download="readme.txt">Start Download Lab Files</a>
+                                <button class="btn btn-outline">Watch Tutorial</button>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </header>
+        
+        
+
+
+        <section class="bg-light">
+            <div class="container mt-1">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Login</div>
+                            <div class="card-body">
+                                <!-- Login Form -->
+                                <form id="loginForm" method="post">
+                                    {% csrf_token %}
+                                    {% if messages %}
+                                    <ul class="messages">
+                                        {% for message in messages %}
+                                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                    <div class="form-group">
+                                        <label for="usernameEmail">Username or Email</label>
+                                        <input type="text" class="form-control" id="usernameEmail" name="usernameEmail" placeholder="Enter your username or email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                                    </div>
+                                    <!-- Captcha display div -->
+                                    <div id="captcha" class="form-group"></div>
+                                    <div class="form-group">
+                                        <label for="captchaInput">Captcha</label>
+                                        <input type="text" class="form-control" id="captchaInput" name="captchaInput" placeholder="Enter the result of the captcha">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Explanation Grid -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <h4>Step 1</h4>
+                        <p>Download username list and password list.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Step 2</h4>
+                        <p>Put them in a file.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Step 3</h4>
+                        <p>Make a Web Scraping code to login.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+    
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Hatim , <a  class="text-primary" href="https://x.com/0xhatim">FOLLOW ME ! </a> 2023. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Feedback Modal-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script>
+
+            // Generate a random integer between min and max (inclusive)
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to generate and display the captcha
+function generateCaptcha() {
+    const num1 = getRandomInt(1, 10); // Generate a random number between 1 and 10
+    const num2 = getRandomInt(1, 10); // Generate another random number between 1 and 10
+
+    const captchaDiv = document.getElementById("captcha");
+    captchaDiv.innerHTML = `Please solve: ${num1} + ${num2} `;
+}
+
+// Call the generateCaptcha function when the page loads
+window.onload = generateCaptcha;
+
+const form = document.getElementById("loginForm");
+
+form.addEventListener("submit", function (event) {
+    const captchaInput = document.getElementById("captchaInput");
+    const captchaResult = num1 + num2;
+
+    const userAnswer = parseInt(captchaInput.value, 10);
+    const correctAnswer = parseInt(captchaResult.textContent, 10);
+
+    if (userAnswer !== correctAnswer) {
+        event.preventDefault(); // Prevent form submission
+        alert("Incorrect captcha. Please try again.");
+        captchaInput.value = ""; // Clear the input field
+        generateCaptcha(); // Generate a new captcha
+    }
+});
+
+        </script>
+    </body>
+</html>
